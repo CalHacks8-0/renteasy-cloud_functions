@@ -39,7 +39,7 @@ exports.aggregateReviews = functions.firestore
 
                 return rentalRef.update({
                     totalReviews: totalReviews,
-                    averageRating: averageStarRating
+                    averageRating: averageStarRating.toString()
                 });
 
             });
